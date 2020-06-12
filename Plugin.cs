@@ -12,8 +12,8 @@ namespace CoinBlocksDoors
         public IEnumerable<MEC.CoroutineHandle> Coroutines;
         public static List<DoorItem> Doors = new List<DoorItem>();
 
-        public static readonly int MinUses = Config.GetInt("cbd_min_use", -1);
-        public static readonly int MaxUses = Config.GetInt("cbd_max_use", -1);
+        public static readonly int MinUses = Config.GetInt("cbd_min_use", 0);
+        public static readonly int MaxUses = Config.GetInt("cbd_max_use", 0);
         public static readonly float MinTime = Config.GetFloat("cbd_min_time", 5f);
         public static readonly float MaxTime = Config.GetFloat("cbd_max_time", 20f);
         public static readonly bool Enabled = Config.GetBool("cbd_enable", true);
